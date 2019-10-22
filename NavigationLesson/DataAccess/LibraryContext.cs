@@ -29,7 +29,7 @@ namespace NavigationLesson.DataAccess
             modelBuilder.Entity<Book>().ToTable("_books");
             modelBuilder.Entity<Student>().ToTable("_students");
             modelBuilder.Entity<BookStudent>().ToTable("_books_students");
-            
+
             modelBuilder.Entity<BookStudent>().Property("StudentId").HasColumnName("student_ID");
             modelBuilder.Entity<BookStudent>().Property("BookId").HasColumnName("book_ID");
             modelBuilder.Entity<BookStudent>().Property("CreationDate").HasColumnName("creation_date");
